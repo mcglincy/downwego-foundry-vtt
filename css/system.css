@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap");
 @font-face {
   font-family: "Ramundus";
   src: url("../assets/fonts/Ramundus.ttf") format("truetype");
@@ -144,6 +144,9 @@
   border-bottom: 3px solid white;
   text-shadow: none;
 }
+.app.window-app.downwego.sheet.actor.character .window-content .tab {
+  padding-top: 10px;
+}
 .app.window-app.downwego.sheet.actor.character .window-content .role-tab .desc:nth-child(1) {
   text-align: center;
   width: 100%;
@@ -207,6 +210,28 @@
 }
 .app.window-app.downwego.sheet.actor.character .window-content .gear-tab .gear-list ol li input[type=text] {
   text-align: center;
+}
+.app.window-app.downwego.sheet.actor.character .window-content .rules-tab {
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.app.window-app.downwego.sheet.actor.character .window-content .rules-tab .rules-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  row-gap: 10px;
+  margin-top: 20px;
+}
+.app.window-app.downwego.sheet.actor.character .window-content .rules-tab .rule-label {
+  font-weight: 800;
+  padding-right: 20px;
+  text-align: right;
+}
+.app.window-app.downwego.sheet.actor.character .window-content .rules-tab .rule-text {
+  font-style: italic;
+}
+.app.window-app.downwego.sheet.actor.character .window-content .rules-tab .rule-text b {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=system.css.map */

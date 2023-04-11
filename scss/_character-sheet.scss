@@ -160,6 +160,9 @@
     }
   }
 
+  .tab {
+    padding-top: 10px;
+  }
   .role-tab {
     .desc:nth-child(1) {
       text-align: center;
@@ -241,4 +244,27 @@
     }
   }
 
+  .rules-tab {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .rules-grid {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      row-gap: 10px;
+      margin-top: 20px;
+    }
+    .rule-label {
+      font-weight: 800;
+      padding-right: 20px;
+      text-align: right;
+    }
+    .rule-text {
+      font-style: italic;
+      b {
+        // font-style: normal;
+        font-weight: bold;
+      }
+    }
+  }
 }
