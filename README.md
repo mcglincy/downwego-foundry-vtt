@@ -1,6 +1,6 @@
 
 
-# Down We Go for Foundry VTT.
+# Down We Go for Foundry VTT
 
 An unofficial, bare-bones system for playing [Down We Go](https://plusoneexp.com/collections/1-games/products/down-we-go-hardback) on [Foundry VTT](https://foundryvtt.com/).
 
