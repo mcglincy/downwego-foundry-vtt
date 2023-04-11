@@ -22,6 +22,12 @@
 .app.window-app.downwego.sheet.actor.character .window-content .desc {
   font-style: italic;
 }
+.app.window-app.downwego.sheet.actor.character .window-content .clickable {
+  cursor: pointer;
+}
+.app.window-app.downwego.sheet.actor.character .window-content .clickable:hover {
+  text-shadow: 0 0 10px var(--color-shadow-primary);
+}
 .app.window-app.downwego.sheet.actor.character .window-content .sheet-header {
   display: flex;
   margin-bottom: 10px;
@@ -209,6 +215,7 @@
   margin-bottom: 10px;
 }
 .app.window-app.downwego.sheet.actor.character .window-content .gear-tab .gear-list ol li input[type=text] {
+  font-size: 18px;
   text-align: center;
 }
 .app.window-app.downwego.sheet.actor.character .window-content .rules-tab {

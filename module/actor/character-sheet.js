@@ -4,10 +4,8 @@ export class DWGCharacterSheet extends ActorSheet {
       return mergeObject(super.defaultOptions, {
         classes: ["downwego", "sheet", "actor", "character"],
         template: "systems/downwego/templates/actor/character-sheet.html",
-        // width: 411,
-        // height: 900,
-        width: 850,
-        height: 800,
+        width: 820,
+        height: 900,
         tabs: [
           {
             navSelector: ".sheet-tabs",
@@ -34,4 +32,39 @@ export class DWGCharacterSheet extends ActorSheet {
       return superData;
     }
 
+
+      /** @override */
+  activateListeners(html) {
+    super.activateListeners(html);
+    html.find(".role-name.bloodthirsty").on("click", this._rollBloodthirsty.bind(this));
+    html.find(".role-name.holy").on("click", this._rollHoly.bind(this));
+    html.find(".role-name.mystical").on("click", this._rollMystical.bind(this));
+    html.find(".role-name.sneaky").on("click", this._rollSneaky.bind(this));
+    html.find(".label.to-hit").on("click", this._rollAttack.bind(this));
+    html.find(".label.defense").on("click", this._rollDefense.bind(this));
+  }
+
+  _rollBloodthirsty() {
+    this.actor.rollBloodthirsty();
+  }
+
+  _rollHoly() {
+    this.actor.rollHoly();
+  }
+
+  _rollMystical() {
+    this.actor.rollMystical();
+  }
+
+  _rollSneaky() {
+    this.actor.rollSneaky();
+  }
+
+  _rollAttack() {
+    this.actor.rollAttack();
+  }
+
+  _rollDefense() {
+    this.actor.rollDefense();
+  }  
 }

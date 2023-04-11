@@ -1,5 +1,6 @@
 
 import { roleAbilityProps } from "../constants.js";
+import { d20Formula, upperCaseFirst } from "../utils.js";
 
 /**
  * @extends {Actor}
@@ -84,5 +85,45 @@ export class DWGActor extends Actor {
         }
       }
       return level;
+    }
+
+    rollRole(roleName) {
+      const level = this.roleLevel(roleName);
+      const formula = d20Formula(level);
+      const flavor = `<b>${roleName.toUpperCase()} SAVE:</b> 1d20 + LVL`;
+      const roll = new Roll(formula);
+      roll.toMessage({flavor});
+    }
+
+    rollBloodthirsty() {
+      this.rollRole("bloodthirsty")
+    }
+
+    rollHoly() {
+      this.rollRole("holy")
+    }
+
+    rollMystical() {
+      this.rollRole("mystical")
+    }
+
+    rollSneaky() {
+      this.rollRole("sneaky")
+    }
+
+    rollAttack() {
+      const modifier = this.bloodthirstyLevel;
+      const formula = d20Formula(modifier);      
+      const flavor = `<b>ATTACK:</b> 1d20 + Bloodthirsty LVL`;
+      const roll = new Roll(formula);
+      roll.toMessage({flavor});      
+    }
+
+    rollDefense() {
+      const modifier = this.sneakyLevel;
+      const formula = d20Formula(modifier);
+      const flavor = `<b>DEFENSE:</b> 1d20 + Sneaky LVL`;
+      const roll = new Roll(formula);
+      roll.toMessage({flavor});      
     }
 }
