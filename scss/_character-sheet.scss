@@ -1,5 +1,4 @@
 .app.window-app.downwego.sheet.actor.character .window-content {
-
   .sheet-header {
     .right-of-portrait {
       img.skull {
@@ -10,7 +9,6 @@
           transform: scaleX(-1);
         }
       } 
- 
       
       .hits-block {
         display: flex;
@@ -88,12 +86,7 @@
     }
   }
 
-
   .role-tab {
-    .desc:nth-child(1) {
-      text-align: center;
-      width: 100%;
-    }
     .roles {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -154,12 +147,9 @@
   }
 
   .gear-tab {
-    .desc {
-      text-align: center;
-      width: 100%;
-    }
     .gear-list {
       ol {
+        margin-top: 20px;
         li {
           margin-bottom: 10px;
           input[type="text"] {

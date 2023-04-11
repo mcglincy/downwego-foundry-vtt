@@ -175,10 +175,6 @@
   position: relative;
   top: -4px;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .role-tab .desc:nth-child(1) {
-  text-align: center;
-  width: 100%;
-}
 .app.window-app.downwego.sheet.actor.character .window-content .role-tab .roles {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -229,9 +225,8 @@
 .app.window-app.downwego.sheet.actor.character .window-content .role-tab .role .abilities .ability .ability-desc {
   font-style: italic;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .gear-tab .desc {
-  text-align: center;
-  width: 100%;
+.app.window-app.downwego.sheet.actor.character .window-content .gear-tab .gear-list ol {
+  margin-top: 20px;
 }
 .app.window-app.downwego.sheet.actor.character .window-content .gear-tab .gear-list ol li {
   margin-bottom: 10px;

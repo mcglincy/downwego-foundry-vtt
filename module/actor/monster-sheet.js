@@ -4,17 +4,9 @@ export class DWGMonsterSheet extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["downwego", "sheet", "actor", "monster"],
       template: "systems/downwego/templates/actor/monster-sheet.html",
-      width: 820,
-      height: 490,
-      tabs: [
-        {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "combat",
-        },
-      ],
-      dragDrop: [{ dragSelector: ".item-list .item", dropSelector: null }],
+      width: 740,
+      height: 485,
+      resizable: false,
     });
   }
-
 }
