@@ -17,7 +17,10 @@
   font-family: "Ramundus";
   font-size: 30px;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 15px;
+}
+.app.window-app.downwego.sheet.actor.character .window-content .flex {
+  display: flex;
 }
 .app.window-app.downwego.sheet.actor.character .window-content .desc {
   font-style: italic;
@@ -66,6 +69,7 @@
   border-bottom: 5px solid black;
   border-top: 5px solid black;
   display: flex;
+  margin-bottom: 10px;
   padding-bottom: 5px;
   padding-top: 5px;
   width: 100%;
@@ -78,56 +82,65 @@
   height: 40px;
   text-align: center;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-row {
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-block {
   display: flex;
+  flex-direction: column;
+  height: 70px;
+  justify-content: space-between;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-row .hits {
-  align-items: center;
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-block .hits-row {
   display: flex;
   flex: 1;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-row .hits input[type=radio] {
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-block .hits-row .hit-radios {
+  padding-top: 4px;
+}
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-block .hits-row .hit-radios .hit-label input[type=radio] {
   /* The native appearance is hidden */
   appearance: none;
   -webkit-appearance: none;
   border-radius: 50%;
   /* The background will be the radio dot's color. */
-  background: blue;
+  background: white;
   /* The border will be the spacing between the dot and the outer circle */
-  border: 8px solid white;
+  border: 8px solid transparent;
   /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
   box-shadow: 0 0 0 3px black;
-  margin-right: 5px;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-row .hits input[type=radio]:checked {
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-block .hits-row .hit-radios .hit-label input[type=radio]:checked {
   appearance: none;
   border-radius: 50%;
   background: blue;
   border: 8px solid black;
   box-shadow: 0 0 0 3px black;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-row .hits input[type=radio]:disabled {
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-block .hits-row .hit-radios .hit-label input[type=radio]:disabled {
   appearance: none;
   border-radius: 50%;
   background: transparent;
   border: 8px solid rgba(153, 153, 153, 0.3333333333);
   box-shadow: 0 0 0 3px rgba(153, 153, 153, 0.3333333333);
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-row .modifiers {
-  flex: 0 0 130px;
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-block .hits-row .hit-radios .hit-label .hit-num {
+  color: #888;
+  font-size: 15px;
+  position: relative;
+  left: -15px;
+  top: -2px;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-row .modifiers .modifier-row {
-  align-items: center;
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-block .hits-row .hit-radios .hit-label.disabled .hit-num {
+  color: transparent;
+}
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-block .initiative-row {
   display: flex;
+  justify-content: space-between;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-row .modifiers .label {
-  line-height: 30px;
-  width: 100px;
-}
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-row .modifiers .modifier-value {
-  font-size: 30px;
-  text-align: center;
-  width: 50px;
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-block .initiative-row .label .modifier {
+  font-family: "Alegreya";
+  font-size: 18px;
+  font-weight: normal;
+  position: relative;
+  top: -4px;
 }
 .app.window-app.downwego.sheet.actor.character .window-content .sheet-tabs.tabs {
   border: none;

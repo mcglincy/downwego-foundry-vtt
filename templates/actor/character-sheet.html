@@ -28,29 +28,27 @@
           />
         </div>
 
-        <div class="hits-row">
-          <div class="hits">
+        <div class="hits-block">
+          <div class="hits-row">
             <div class="label">hits</div>
             <div class="hit-radios">
               {{#times 10}}
-              <label>
+              <label class="hit-label {{#ifLt ../data.system.hits.max
+                this}}disabled{{/ifLt}}">
                 <input class="hit-radio" type="radio" name="hits.value"
                 value="{{this}}" {{#ifEq ../data.system.hits.value
                 this}}checked{{/ifEq}} {{#ifLt ../data.system.hits.max
                 this}}disabled="true"{{/ifLt}} />
+                <span class="hit-num">{{this}}</span>
               </label>
               {{/times}}
             </div>
-          </div>
-          <div class="modifiers">
-            <div class="modifier-row">
-              <div class="label to-hit clickable">to hit</div>
-              <span class="modifier-value">+{{data.system.toHitModifier}}</span>
-            </div>
-            <div class="modifier-row">
-              <div class="label defense clickable">dEfEnsE</div>
-              <span class="modifier-value">+{{data.system.defenseModifier}}</span>
-            </div>
+          </div>  
+          <div class="initiative-row">
+            <div class="label initiative clickable" title="Roll Initiative">initiAtivE</div>
+            <div class="label attack clickable" title="Roll Attack">AttAck<span class="modifier" title="Roll Attack"> (+{{data.system.toHitModifier}})</span></div>            
+            <div class="label defense clickable" title="Roll Defense">dEfEnsE<span class="modifier" title="Roll Defensee"> (+{{data.system.defenseModifier}})</span></div>            
+            <div class="label luck clickable" title="Roll Luck">luck</div>
           </div>
         </div>
       </div>

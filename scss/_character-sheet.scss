@@ -14,7 +14,11 @@
     font-family: "Ramundus";
     font-size: 30px;
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 15px;
+  }
+
+  .flex {
+    display: flex;
   }
 
   .desc {
@@ -64,7 +68,7 @@
         border-bottom: 5px solid black;
         border-top: 5px solid black;
         display: flex;
-        // margin-bottom: 10px;
+        margin-bottom: 10px;
         // margin-top: 10px;
         padding-bottom: 5px;
         padding-top: 5px;
@@ -80,55 +84,77 @@
         }
       }  
       
-      .hits-row {
+      .hits-block {
         display: flex;
-        .hits {
-          align-items: center;
+        flex-direction: column;
+        height: 70px;
+        justify-content: space-between;
+        .hits-row {
+          // align-items: center;
           display: flex;
           flex: 1;
-          input[type="radio"] {
-            /* The native appearance is hidden */
-            appearance: none;
-            -webkit-appearance: none;
-            border-radius: 50%;
-            /* The background will be the radio dot's color. */
-            background: blue;
-            /* The border will be the spacing between the dot and the outer circle */
-            border: 8px solid white;
-            /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-            box-shadow: 0 0 0 3px black;
-            margin-right: 5px;
-            &:checked {
-              appearance: none;
-              border-radius: 50%;
-              background: blue;
-              border: 8px solid black;
-              box-shadow: 0 0 0 3px black;
-            }
-            &:disabled {
-              appearance: none;
-              border-radius: 50%;
-              background: transparent;
-              border: 8px solid #99999955;
-              box-shadow: 0 0 0 3px #99999955;
-            }  
-          }
+          .hit-radios {
+            padding-top: 4px;
+            .hit-label {
+              // border: 1px solid red;
+              // margin-right: 20px;
+  
+              input[type="radio"] {
+                // float: left;
+                /* The native appearance is hidden */
+                appearance: none;
+                -webkit-appearance: none;
+                border-radius: 50%;
+                /* The background will be the radio dot's color. */
+                background: white;
+                /* The border will be the spacing between the dot and the outer circle */
+                border: 8px solid transparent;
+                /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
+                box-shadow: 0 0 0 3px black;
+                &:checked {
+                  appearance: none;
+                  border-radius: 50%;
+                  background: blue;
+                  border: 8px solid black;
+                  box-shadow: 0 0 0 3px black;
+                }
+                &:disabled {
+                  appearance: none;
+                  border-radius: 50%;
+                  background: transparent;
+                  border: 8px solid #99999955;
+                  box-shadow: 0 0 0 3px #99999955;
+                }  
+              }
+              .hit-num {
+                color: #888;
+                // float: left;
+                font-size: 15px;
+                position: relative;
+                left: -15px;
+                top: -2px;
+              }  
+  
+              &.disabled {
+                .hit-num {
+                  color: transparent;
+                }
+              }
+            } 
+          }        
         }
-        .modifiers {
-          flex: 0 0 130px;
-          .modifier-row {
-            align-items: center;
-            display: flex;
-          }
+        .initiative-row {
+          display: flex;
+          justify-content: space-between;
           .label {
-            line-height: 30px;
-            width: 100px;
+            .modifier {
+              font-family: "Alegreya";
+              font-size: 18px;
+              font-weight: normal;
+              position: relative;
+              top: -4px;
+            }
           }
-          .modifier-value {
-            font-size: 30px;
-            text-align: center;
-            width: 50px;
-          }  
         }
       }      
     }

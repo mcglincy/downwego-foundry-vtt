@@ -28,7 +28,6 @@ export class DWGCharacterSheet extends ActorSheet {
       superData.data.system.roles.mystical.level = this.actor.mysticalLevel;
       superData.data.system.roles.sneaky.level = this.actor.sneakyLevel;
       superData.data.system.defenseModifier = superData.data.system.roles.sneaky.level;
-      console.log(superData);
       return superData;
     }
 
@@ -40,8 +39,10 @@ export class DWGCharacterSheet extends ActorSheet {
     html.find(".role-name.holy").on("click", this._rollHoly.bind(this));
     html.find(".role-name.mystical").on("click", this._rollMystical.bind(this));
     html.find(".role-name.sneaky").on("click", this._rollSneaky.bind(this));
-    html.find(".label.to-hit").on("click", this._rollAttack.bind(this));
+    html.find(".label.attack").on("click", this._rollAttack.bind(this));
     html.find(".label.defense").on("click", this._rollDefense.bind(this));
+    html.find(".label.initiative").on("click", this._rollInitiative.bind(this));
+    html.find(".label.luck").on("click", this._rollLuck.bind(this));
   }
 
   _rollBloodthirsty() {
@@ -67,4 +68,13 @@ export class DWGCharacterSheet extends ActorSheet {
   _rollDefense() {
     this.actor.rollDefense();
   }  
+
+  _rollInitiative() {
+    this.actor.rollInitiative();
+  }  
+
+  _rollLuck() {
+    this.actor.rollLuck();
+  }  
+
 }

@@ -126,4 +126,18 @@ export class DWGActor extends Actor {
       const roll = new Roll(formula);
       roll.toMessage({flavor});      
     }
+
+    rollInitiative() {
+      const formula = "1d6";
+      const flavor = `<b>INITIATIVE:</b> 1d6`;
+      const roll = new Roll(formula);
+      roll.toMessage({flavor});      
+    }
+
+    rollLuck() {
+      const formula = "1d6";
+      const flavor = `<b>LUCK:</b> 1d6`;
+      const roll = new Roll(formula);
+      roll.toMessage({flavor}); 
+    }
 }
