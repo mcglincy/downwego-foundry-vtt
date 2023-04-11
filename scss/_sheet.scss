@@ -1,0 +1,116 @@
+.app.window-app.downwego.sheet .window-content {
+  background-image: none;
+  background-color: white;
+  font-family: "Alegreya";
+  font-size: 16px;
+  padding: 20px;
+
+  img {
+    border: none;    
+  }
+
+  .clickable {
+    cursor: pointer;
+    &:hover {
+      text-shadow: 0 0 10px var(--color-shadow-primary);
+    }
+  }
+
+  .label {
+    font-family: "Ramundus";
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .desc {
+    font-style: italic;
+  }
+
+  .sheet-header {
+    display: flex;   
+    margin-bottom: 10px; 
+    width: 100%;
+    .portrait {
+      border: 1px solid black;
+      height: 210px;
+      width: 210px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .right-of-portrait {
+      flex: 1;
+      margin-left: 10px;
+      .title-text {
+        align-items: center;
+        display: flex;
+        font-family: "Ramundus";
+        font-size: 70px;  
+        justify-content: center;
+        img.skull {
+          height: 50px;
+          margin-left: 20px;
+          margin-right: 20px;
+          &:last-child {
+            transform: scaleX(-1);
+          }
+        } 
+      }
+      .my-name-is {
+        align-items: center;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+        display: flex;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        width: 100%;
+        input { 
+          flex: 1;
+          font-weight: 800;
+          font-size: 30px;
+          padding: 4px;
+          height: 40px;
+          text-align: center;
+        }
+      }       
+    }
+  }
+
+  .sheet-tabs.tabs {
+    border: none;
+    // justify-content: center;
+    // border-bottom: 3px solid black;
+    background: linear-gradient(
+      to bottom,
+      white 49px,
+      black 49px 52px
+    );
+    .tab-label {
+      font-family: "Ramundus";
+      font-size: 30px; 
+    }
+    .item {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      &.active {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+        border-bottom: 3px solid white;
+        text-shadow: none;
+      }
+    }
+  }
+  .tab {
+    padding-top: 10px;
+  }
+}

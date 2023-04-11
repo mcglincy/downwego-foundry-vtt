@@ -1,0 +1,42 @@
+.app.window-app.downwego.sheet.actor.monster .window-content {
+
+  .sheet-header {
+    .right-of-portrait {
+      .label {
+        // margin-right: 10px;
+      }
+      .title-text {
+        img.monster {
+          height: 100px;
+          margin-left: 20px;
+          margin-right: 20px;
+          &:last-child {
+            transform: scaleX(-1);
+          }
+        } 
+      }
+      .hits-row {
+        display: flex;
+        justify-content: space-between;
+        input[type="text"] {
+          font-size: 20px;
+          text-align: center;
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  .sheet-body {
+    .field-row {
+      display: flex;
+      margin-bottom: 10px;
+      .label {
+        width: 60px;
+      }
+      textarea {
+        resize: none;
+      }  
+    }
+  }
+}

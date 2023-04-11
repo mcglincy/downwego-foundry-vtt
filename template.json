@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["character", "monster", "npc"],
+    "types": ["character", "monster"],
     "templates": {
     },
     "character": {
@@ -77,9 +77,6 @@
         "value": 0
       },
       "special": null
-    },
-    "npc": {
-
     }
   },
   "Item": {

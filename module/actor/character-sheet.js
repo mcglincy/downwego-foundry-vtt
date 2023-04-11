@@ -10,7 +10,7 @@ export class DWGCharacterSheet extends ActorSheet {
           {
             navSelector: ".sheet-tabs",
             contentSelector: ".sheet-body",
-            initial: "combat",
+            initial: "role",
           },
         ],
         dragDrop: [{ dragSelector: ".item-list .item", dropSelector: null }],

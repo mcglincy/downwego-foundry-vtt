@@ -3,68 +3,68 @@
   font-family: "Ramundus";
   src: url("../assets/fonts/Ramundus.ttf") format("truetype");
 }
-.app.window-app.downwego.sheet.actor.character .window-content {
+.app.window-app.downwego.sheet .window-content {
   background-image: none;
   background-color: white;
   font-family: "Alegreya";
   font-size: 16px;
   padding: 20px;
 }
-.app.window-app.downwego.sheet.actor.character .window-content img {
+.app.window-app.downwego.sheet .window-content img {
   border: none;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .label {
+.app.window-app.downwego.sheet .window-content .clickable {
+  cursor: pointer;
+}
+.app.window-app.downwego.sheet .window-content .clickable:hover {
+  text-shadow: 0 0 10px var(--color-shadow-primary);
+}
+.app.window-app.downwego.sheet .window-content .label {
   font-family: "Ramundus";
   font-size: 30px;
   font-weight: bold;
   margin-right: 15px;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .flex {
+.app.window-app.downwego.sheet .window-content .flex {
   display: flex;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .desc {
+.app.window-app.downwego.sheet .window-content .desc {
   font-style: italic;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .clickable {
-  cursor: pointer;
-}
-.app.window-app.downwego.sheet.actor.character .window-content .clickable:hover {
-  text-shadow: 0 0 10px var(--color-shadow-primary);
-}
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header {
+.app.window-app.downwego.sheet .window-content .sheet-header {
   display: flex;
   margin-bottom: 10px;
   width: 100%;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .portrait {
+.app.window-app.downwego.sheet .window-content .sheet-header .portrait {
   border: 1px solid black;
   height: 210px;
   width: 210px;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .portrait img {
+.app.window-app.downwego.sheet .window-content .sheet-header .portrait img {
   height: 100%;
   width: 100%;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait {
+.app.window-app.downwego.sheet .window-content .sheet-header .right-of-portrait {
   flex: 1;
   margin-left: 10px;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .title-text {
+.app.window-app.downwego.sheet .window-content .sheet-header .right-of-portrait .title-text {
   align-items: center;
   display: flex;
   font-family: "Ramundus";
   font-size: 70px;
   justify-content: center;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .title-text img.skull {
+.app.window-app.downwego.sheet .window-content .sheet-header .right-of-portrait .title-text img.skull {
   height: 50px;
   margin-left: 20px;
   margin-right: 20px;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .title-text img.skull:last-child {
+.app.window-app.downwego.sheet .window-content .sheet-header .right-of-portrait .title-text img.skull:last-child {
   transform: scaleX(-1);
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .my-name-is {
+.app.window-app.downwego.sheet .window-content .sheet-header .right-of-portrait .my-name-is {
   align-items: center;
   border-bottom: 5px solid black;
   border-top: 5px solid black;
@@ -74,13 +74,46 @@
   padding-top: 5px;
   width: 100%;
 }
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .my-name-is input {
+.app.window-app.downwego.sheet .window-content .sheet-header .right-of-portrait .my-name-is input {
   flex: 1;
   font-weight: 800;
   font-size: 30px;
   padding: 4px;
   height: 40px;
   text-align: center;
+}
+.app.window-app.downwego.sheet .window-content .sheet-tabs.tabs {
+  border: none;
+  background: linear-gradient(to bottom, white 49px, black 49px 52px);
+}
+.app.window-app.downwego.sheet .window-content .sheet-tabs.tabs .tab-label {
+  font-family: "Ramundus";
+  font-size: 30px;
+}
+.app.window-app.downwego.sheet .window-content .sheet-tabs.tabs .item {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.app.window-app.downwego.sheet .window-content .sheet-tabs.tabs .item.active {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid white;
+  text-shadow: none;
+}
+.app.window-app.downwego.sheet .window-content .tab {
+  padding-top: 10px;
+}
+
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait img.skull {
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait img.skull:last-child {
+  transform: scaleX(-1);
 }
 .app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait .hits-block {
   display: flex;
@@ -141,30 +174,6 @@
   font-weight: normal;
   position: relative;
   top: -4px;
-}
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-tabs.tabs {
-  border: none;
-  background: linear-gradient(to bottom, white 49px, black 49px 52px);
-}
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-tabs.tabs .tab-label {
-  font-family: "Ramundus";
-  font-size: 30px;
-}
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-tabs.tabs .item {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.app.window-app.downwego.sheet.actor.character .window-content .sheet-tabs.tabs .item.active {
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-  border-top: 3px solid black;
-  border-bottom: 3px solid white;
-  text-shadow: none;
-}
-.app.window-app.downwego.sheet.actor.character .window-content .tab {
-  padding-top: 10px;
 }
 .app.window-app.downwego.sheet.actor.character .window-content .role-tab .desc:nth-child(1) {
   text-align: center;
@@ -252,6 +261,34 @@
 }
 .app.window-app.downwego.sheet.actor.character .window-content .rules-tab .rule-text b {
   font-weight: bold;
+}
+
+.app.window-app.downwego.sheet.actor.monster .window-content .sheet-header .right-of-portrait .title-text img.monster {
+  height: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.app.window-app.downwego.sheet.actor.monster .window-content .sheet-header .right-of-portrait .title-text img.monster:last-child {
+  transform: scaleX(-1);
+}
+.app.window-app.downwego.sheet.actor.monster .window-content .sheet-header .right-of-portrait .hits-row {
+  display: flex;
+  justify-content: space-between;
+}
+.app.window-app.downwego.sheet.actor.monster .window-content .sheet-header .right-of-portrait .hits-row input[type=text] {
+  font-size: 20px;
+  text-align: center;
+  width: 50px;
+}
+.app.window-app.downwego.sheet.actor.monster .window-content .sheet-body .field-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+.app.window-app.downwego.sheet.actor.monster .window-content .sheet-body .field-row .label {
+  width: 60px;
+}
+.app.window-app.downwego.sheet.actor.monster .window-content .sheet-body .field-row textarea {
+  resize: none;
 }
 
 /*# sourceMappingURL=system.css.map */

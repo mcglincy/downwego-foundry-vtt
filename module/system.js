@@ -1,5 +1,6 @@
 import { DWGActor } from "./actor/actor.js";
 import { DWGCharacterSheet } from "./actor/character-sheet.js";
+import { DWGMonsterSheet } from "./actor/monster-sheet.js";
 
 Hooks.once("init", async () => {
   registerDocumentClasses();
@@ -20,6 +21,11 @@ const registerSheets = () => {
     makeDefault: true,
     label: "DWG.CharacterSheet",
   });
+  Actors.registerSheet("downwego", DWGMonsterSheet, {
+    types: ["monster"],
+    makeDefault: true,
+    label: "DWG.MonsterSheet",
+  });  
   // Actors.registerSheet(CY.system, CYNpcSheet, {
   //   types: ["npc"],
   //   makeDefault: true,
