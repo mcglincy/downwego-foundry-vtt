@@ -1,0 +1,36 @@
+{
+  "id": "downwego",
+  "title": "Down We Go",
+  "description": "Foundry VTT system for Down We Go.",
+  "version": "1.0.0",
+  "templateVersion": 2,
+  "authors": [
+    {
+      "name": "mcglintlock"
+    }    
+  ],
+  "esmodules": ["module/system.js"],
+  "styles": ["css/system.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+  ],  
+  "socket": true,
+  "initiative": "1d6",
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "hits",
+  "secondaryTokenAttribute": null,
+  "compatibility": {
+    "minimum": 10,
+    "verified": 10
+  },  
+  "url": "https://github.com/mcglincy/downwego-foundry-vtt",
+  "manifest": "https://github.com/mcglincy/downwego-foundry-vtt/releases/latest/download/system.json",
+  "download": "https://github.com/mcglincy/downwego-foundry-vtt/releases/latest/download/system.zip"
+}

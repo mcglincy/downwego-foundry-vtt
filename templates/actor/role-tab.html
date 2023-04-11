@@ -1,0 +1,205 @@
+<div class="tab role-tab" data-group="primary" data-tab="role">
+  <div class="desc">
+    (To start, put +2 in one Role or +1 in two Roles. Choose LVL number of abilities in those Roles. You can use Role as a roleplaying prompt.)
+  </div>
+
+  <div class="roles">
+    <div class="role">
+      <div class="role-name">SNEAKY <span class="role-level">LVL {{data.system.roles.sneaky.level}}</span></div>
+      <div class="role-desc">(Quick, nimble, dodge mechanical traps)</div>
+      <div class="abilities">
+        <div class="abilities-title">
+          ABILITIES (Auto-success LVL times/day)
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.sneaky.ability-0" {{#if data.system.roles.sneaky.ability-0}}checked{{/if}}/>
+          <div class="ability-name">Backstab</div>
+          <div class="ability-desc">(Attacks from behind inflict LVL Hits)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.sneaky.ability-1" {{#if data.system.roles.sneaky.ability-1}}checked{{/if}}/>
+          <div class="ability-name">Lockpicking</div>
+          <div class="ability-desc">(Open any non-magical lock)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.sneaky.ability-2" {{#if data.system.roles.sneaky.ability-2}}checked{{/if}}/>
+          <div class="ability-name">Hide</div>
+          <div class="ability-desc">(Totally hidden in shadows when still)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.sneaky.ability-3" {{#if data.system.roles.sneaky.ability-3}}checked{{/if}}/>
+          <div class="ability-name">Appraise</div>
+          <div class="ability-desc">(Tell junk from valuables)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.sneaky.ability-4" {{#if data.system.roles.sneaky.ability-4}}checked{{/if}}/>
+          <div class="ability-name">Acrobatics</div>
+          <div class="ability-desc">(Make an impressive feat of agility)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.sneaky.ability-5" {{#if data.system.roles.sneaky.ability-5}}checked{{/if}}/>
+          <div class="ability-name">Contacts</div>
+          <div class="ability-desc">(Find information or hear rumors)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.sneaky.ability-custom" {{#if data.system.roles.sneaky.ability-custom}}checked{{/if}}/>
+          <div class="ability-input">
+            <input type="text" name="system.roles.sneaky.ability-custom-name" value="{{data.system.roles.sneaky.ability-custom-name}}"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-name">MYSTICAL <span class="role-level">LVL {{data.system.roles.mystical.level}}</div>
+      <div class="role-desc">(Willpower, logic, resist magical effects)</div>
+      <div class="abilities">
+        <div class="abilities-title">
+          ABILITIES (Auto-success LVL times/day, Range: LVLx10 ft.)
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.mystical.ability-0" {{#if data.system.roles.mystical.ability-0}}checked{{/if}}/>
+          <div class="ability-name">Painbolt</div>
+          <div class="ability-desc">(Inflict LVL Hits on 1 target)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.mystical.ability-1" {{#if data.system.roles.mystical.ability-1}}checked{{/if}}/>
+          <div class="ability-name">Sleep</div>
+          <div class="ability-desc">
+            (LVL targets sleep 1 min. or 1 target sleeps LVL min.)
+          </div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.mystical.ability-2" {{#if data.system.roles.mystical.ability-2}}checked{{/if}}/>
+          <div class="ability-name">Light</div>
+          <div class="ability-desc">
+            (Mystical light LVL×10 ft. for LVL rooms)
+          </div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.mystical.ability-3" {{#if data.system.roles.mystical.ability-3}}checked{{/if}}/>
+          <div class="ability-name">Missile</div>
+          <div class="ability-desc">(Inflict 1 Hit on LVL enemies)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.mystical.ability-4" {{#if data.system.roles.mystical.ability-4}}checked{{/if}}/>
+          <div class="ability-name">Invisibility</div>
+          <div class="ability-desc">(Invisible for LVL min.)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.mystical.ability-5" {{#if data.system.roles.mystical.ability-5}}checked{{/if}}/>
+          <div class="ability-name">Wall</div>
+          <div class="ability-desc">
+            (Raise impenetrable wall of something for LVL min. )
+          </div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.mystical.ability-custom" {{#if data.system.roles.mystical.ability-custom}}checked{{/if}}/>
+          <div class="ability-input">
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-name">HOLY <span class="role-level">LVL {{data.system.roles.holy.level}}</div>
+      <div class="role-desc">(Poise, confidence, resist mental influence)</div>
+      <div class="abilities">
+        <div class="abilities-title">
+          ABILITIES (Auto-success LVL times/day)
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.holy.ability-0" {{#if data.system.roles.holy.ability-0}}checked{{/if}}/>
+          <div class="ability-name">Turn undead</div>
+          <div class="ability-desc">(LVL undead flee for LVL× min.)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.holy.ability-1" {{#if data.system.roles.holy.ability-1}}checked{{/if}}/>
+          <div class="ability-name">Bless</div>
+          <div class="ability-desc">
+            (Give LVL targets +1 or 1 target +LVL on any one roll)
+          </div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.holy.ability-2" {{#if data.system.roles.holy.ability-2}}checked{{/if}}/>
+          <div class="ability-name">Heal</div>
+          <div class="ability-desc">
+            (LVL Hits on 1 target or 1 Hit on LVL targets)
+          </div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.holy.ability-3" {{#if data.system.roles.holy.ability-3}}checked{{/if}}/>
+          <div class="ability-name">Cleanse</div>
+          <div class="ability-desc">(Banish any lingering effect)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.holy.ability-4" {{#if data.system.roles.holy.ability-4}}checked{{/if}}/>
+          <div class="ability-name">Divination</div>
+          <div class="ability-desc">(Deity answers 1 question)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.holy.ability-5" {{#if data.system.roles.holy.ability-5}}checked{{/if}}/>
+          <div class="ability-name">Smite</div>
+          <div class="ability-desc">(Inflict 3 Holy Hits)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.holy.ability-custom" {{#if data.system.roles.holy.ability-custom}}checked{{/if}}/>
+          <div class="ability-input">
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-name">BLOODTHIRSTY <span class="role-level">LVL {{data.system.roles.bloodthirsty.level}}</div>
+      <div class="role-desc">(Endurance, nerve, bear physical hardship)</div>
+      <div class="abilities">
+        <div class="abilities-title">
+          ABILITIES (Auto-success LVL times/day)
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.bloodthirsty.ability-0" {{#if data.system.roles.bloodthirsty.ability-0}}checked{{/if}}/>
+          <div class="ability-name">Tactics</div>
+          <div class="ability-desc">
+            (Adjacent friends get +1 To Hit for the combat)
+          </div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.bloodthirsty.ability-1" {{#if data.system.roles.bloodthirsty.ability-1}}checked{{/if}}/>
+          <div class="ability-name">Cleave</div>
+          <div class="ability-desc">(Extra attack if you kill an enemy)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.bloodthirsty.ability-2" {{#if data.system.roles.bloodthirsty.ability-2}}checked{{/if}}/>
+          <div class="ability-name">Alertness</div>
+          <div class="ability-desc">(Win Initiative)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.bloodthirsty.ability-3" {{#if data.system.roles.bloodthirsty.ability-3}}checked{{/if}}/>
+          <div class="ability-name">Parry</div>
+          <div class="ability-desc">(Reroll a Defense roll)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.bloodthirsty.ability-4" {{#if data.system.roles.bloodthirsty.ability-4}}checked{{/if}}/>
+          <div class="ability-name">Intimidate</div>
+          <div class="ability-desc">(Scare off LVL non-monsters)</div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.bloodthirsty.ability-5" {{#if data.system.roles.bloodthirsty.ability-5}}checked{{/if}}/>
+          <div class="ability-name">Rage</div>
+          <div class="ability-desc">
+            (Do 2 attacks but draw free attack from closest enemy)
+          </div>
+        </div>
+        <div class="ability">
+         <input type="checkbox" name="system.roles.bloodthirsty.ability-custom" {{#if data.system.roles.bloodthirsty.ability-custom}}checked{{/if}}/>
+          <div class="ability-input">
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

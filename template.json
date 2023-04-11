@@ -1,0 +1,91 @@
+{
+  "Actor": {
+    "types": ["character", "monster", "npc"],
+    "templates": {
+    },
+    "character": {
+      "templates": [],
+      "hits": {
+        "max": 0,
+        "value": 0
+      },
+      "roles": {
+        "sneaky": {
+          "ability-0": false,
+          "ability-1": false,
+          "ability-2": false,
+          "ability-3": false,
+          "ability-4": false,
+          "ability-5": false,
+          "ability-custom": false,
+          "ability-custom-name": null,
+          "ability-custom-desc": null
+        },
+        "mystical": {
+          "ability-0": false,
+          "ability-1": false,
+          "ability-2": false,
+          "ability-3": false,
+          "ability-4": false,
+          "ability-5": false,
+          "ability-custom": false,
+          "ability-custom-name": null,
+          "ability-custom-desc": null
+        },
+        "holy": {
+          "ability-0": false,
+          "ability-1": false,
+          "ability-2": false,
+          "ability-3": false,
+          "ability-4": false,
+          "ability-5": false,
+          "ability-custom": false,
+          "ability-custom-name": null,
+          "ability-custom-desc": null
+        },
+        "bloodthirsty": {
+          "ability-0": false,
+          "ability-1": false,
+          "ability-2": false,
+          "ability-3": false,
+          "ability-4": false,
+          "ability-5": false,
+          "custom": false,
+          "custom-name": null,
+          "custom-desc": null
+        }                       
+      },
+      "gear": {
+        "item-0": null,
+        "item-1": null,
+        "item-2": null,
+        "item-3": null,
+        "item-4": null,
+        "item-5": null,
+        "item-6": null,
+        "item-7": null,
+        "item-8": null,
+        "item-9": null
+      }
+    },
+    "monster": {
+      "description": null,
+      "difficulty": 11,
+      "damage": 11,
+      "hits": {
+        "max": 1,
+        "value": 0
+      },
+      "special": null
+    },
+    "npc": {
+
+    }
+  },
+  "Item": {
+    "types": [
+    ],
+    "templates": {
+    }
+  }
+}
