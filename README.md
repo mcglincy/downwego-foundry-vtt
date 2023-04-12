@@ -2,7 +2,7 @@
 
 An unofficial, bare-bones system for playing [Down We Go](https://plusoneexp.com/collections/1-games/products/down-we-go-hardback) on [Foundry VTT](https://foundryvtt.com/).
 
-Down We Go is © [Plus One Exp](https://plusoneexp.com/)
+Down We Go is © [Plus One Exp](https://plusoneexp.com/) and [Apes of Wrath](https://apesofwrath.itch.io/).
 
 ## License
 
