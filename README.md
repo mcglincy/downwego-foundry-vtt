@@ -6,5 +6,5 @@ Down We Go is © [Plus One Exp](https://plusoneexp.com/) and [Apes of Wrath](htt
 
 ## License
 
-* System code is [MIT](https://en.wikipedia.org/wiki/MIT_License).
+* Code for Foundry is [MIT](https://en.wikipedia.org/wiki/MIT_License).
 * Down We Go core system is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
