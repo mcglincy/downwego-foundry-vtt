@@ -288,7 +288,14 @@
   display: flex;
   justify-content: space-between;
 }
-.app.window-app.downwego.sheet.actor.monster .window-content .sheet-header .right-of-portrait .hits-row input[type=text] {
+.app.window-app.downwego.sheet.actor.monster .window-content .sheet-header .right-of-portrait .hits-row .label {
+  margin-right: 10px;
+}
+.app.window-app.downwego.sheet.actor.monster .window-content .sheet-header .right-of-portrait .hits-row .slash {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.app.window-app.downwego.sheet.actor.monster .window-content .sheet-header .right-of-portrait .hits-row input[type=number] {
   font-size: 20px;
   text-align: center;
   width: 50px;

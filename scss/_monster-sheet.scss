@@ -2,9 +2,6 @@
 
   .sheet-header {
     .right-of-portrait {
-      .label {
-        // margin-right: 10px;
-      }
       .title-text {
         img.monster {
           height: 100px;
@@ -18,7 +15,14 @@
       .hits-row {
         display: flex;
         justify-content: space-between;
-        input[type="text"] {
+        .label {
+          margin-right: 10px;
+        }
+        .slash {
+          margin-left: 4px;
+          margin-right: 4px;
+        }
+        input[type="number"] {
           font-size: 20px;
           text-align: center;
           width: 50px;

@@ -15,3 +15,8 @@ export const roleAbilityProps = [
   "ability-5",
   "ability-custom",
 ];
+
+export const actorTypes = {
+  character: "character",
+  monster: "monster"
+}

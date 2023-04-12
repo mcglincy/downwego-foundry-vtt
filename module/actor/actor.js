@@ -1,38 +1,31 @@
 
-import { roleAbilityProps } from "../constants.js";
-import { d20Formula, upperCaseFirst } from "../utils.js";
+import { actorTypes, roleAbilityProps } from "../constants.js";
+import { d20Formula } from "../utils.js";
 
 /**
  * @extends {Actor}
  */
 export class DWGActor extends Actor {
-
     /** @override */
-    // static async create(data, options = {}) {
-    //   data.prototypeToken = data.prototypeToken || {};
-    //   let defaults = {};
-    //   if (data.type === CY.actorTypes.character) {
-    //     defaults = {
-    //       actorLink: true,
-    //       disposition: 1,
-    //       vision: true,
-    //     };
-    //   } else if (data.type === CY.actorTypes.npc) {
-    //     defaults = {
-    //       actorLink: false,
-    //       disposition: -1,
-    //       vision: false,
-    //     };
-    //   } else if (data.type === CY.actorTypes.vehicle) {
-    //     defaults = {
-    //       actorLink: true,
-    //       disposition: 0,
-    //       vision: true,
-    //     };
-    //   } 
-    //   mergeObject(data.prototypeToken, defaults, { overwrite: false });
-    //   return super.create(data, options);
-    // }
+    static async create(data, options = {}) {
+      data.prototypeToken = data.prototypeToken || {};
+      let defaults = {};
+      if (data.type === actorTypes.character) {
+        defaults = {
+          actorLink: true,
+          disposition: 1,
+          vision: true,
+        };
+      } else if (data.type === CY.actorTypes.monster) {
+        defaults = {
+          actorLink: false,
+          disposition: -1,
+          vision: false,
+        };
+      }
+      mergeObject(data.prototypeToken, defaults, { overwrite: false });
+      return super.create(data, options);
+    }
 
     get bloodthirstyLevel() {
       return this.roleLevel("bloodthirsty");

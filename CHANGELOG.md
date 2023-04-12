@@ -1,3 +1,7 @@
+# 0.2.1
+
+- Set reasonable defaults for actor link & vision for actor creation.
+
 # 0.2.0
 
 - Add notes tab with editor.
