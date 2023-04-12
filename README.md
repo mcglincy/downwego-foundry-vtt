@@ -4,6 +4,8 @@ An unofficial, bare-bones system for playing [Down We Go](https://plusoneexp.com
 
 Down We Go is © [Plus One Exp](https://plusoneexp.com/) and [Apes of Wrath](https://apesofwrath.itch.io/).
 
+![downwego-screenshot](https://user-images.githubusercontent.com/189172/231454456-46c9edce-7f56-4663-bc47-855846996291.png)
+
 ## License
 
 * Code for Foundry is [MIT](https://en.wikipedia.org/wiki/MIT_License).
