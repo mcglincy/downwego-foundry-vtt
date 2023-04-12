@@ -46,6 +46,7 @@ const registerSheets = () => {
 const registerHandlebarsPartials = async () => {
   await loadTemplates([
     "systems/downwego/templates/actor/gear-tab.html",
+    "systems/downwego/templates/actor/notes-tab.html",
     "systems/downwego/templates/actor/role-tab.html",
     "systems/downwego/templates/actor/rules-tab.html",
   ]);

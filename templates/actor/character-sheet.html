@@ -1,75 +1,77 @@
 <form class="{{cssClass}}" autocomplete="off">
-  <div class="sheet-wrapper">
-    <div class="sheet-header">
-      <div class="portrait">
-        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+  <div class="sheet-header">
+    <div class="portrait">
+      <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    </div>
+    <div class="right-of-portrait">
+      <div class="title-text">
+        <img
+          class="skull"
+          alt="skull"
+          src="systems/downwego/assets/images/ui/skull.webp"
+        />
+        Down wE go
+        <img
+          class="skull"
+          alt="skull"
+          src="systems/downwego/assets/images/ui/skull.webp"
+        />
       </div>
-      <div class="right-of-portrait">
-        <div class="title-text">
-          <img
-            class="skull"
-            alt="skull"
-            src="systems/downwego/assets/images/ui/skull.webp"
-          />
-          Down wE go
-          <img
-            class="skull"
-            alt="skull"
-            src="systems/downwego/assets/images/ui/skull.webp"
-          />
-        </div>
-        <div class="my-name-is">
-          <div class="label">my nAmE is</div>
-          <input
-            type="text"
-            name="name"
-            value="{{actor.name}}"
-            spellcheck="false"
-          />
-        </div>
+      <div class="my-name-is">
+        <div class="label">my nAmE is</div>
+        <input
+          type="text"
+          name="name"
+          value="{{actor.name}}"
+          spellcheck="false"
+        />
+      </div>
 
-        <div class="hits-block">
-          <div class="hits-row">
-            <div class="label">hits</div>
-            <div class="hit-radios">
-              {{#times 10}}
-              <label class="hit-label {{#ifLt ../data.system.hits.max
-                this}}disabled{{/ifLt}}">
-                <input class="hit-radio" type="radio" name="hits.value"
-                value="{{this}}" {{#ifEq ../data.system.hits.value
-                this}}checked{{/ifEq}} {{#ifLt ../data.system.hits.max
-                this}}disabled="true"{{/ifLt}} />
-                <span class="hit-num">{{this}}</span>
-              </label>
-              {{/times}}
-            </div>
-          </div>  
-          <div class="initiative-row">
-            <div class="label initiative clickable" title="Roll Initiative">initiAtivE</div>
-            <div class="label attack clickable" title="Roll Attack">AttAck<span class="modifier" title="Roll Attack"> (+{{data.system.toHitModifier}})</span></div>            
-            <div class="label defense clickable" title="Roll Defense">dEfEnsE<span class="modifier" title="Roll Defensee"> (+{{data.system.defenseModifier}})</span></div>            
-            <div class="label luck clickable" title="Roll Luck">luck</div>
+      <div class="hits-block">
+        <div class="hits-row">
+          <div class="label">hits</div>
+          <div class="hit-radios">
+            {{#times 10}}
+            <label class="hit-label {{#ifLt ../data.system.hits.max
+              this}}disabled{{/ifLt}}">
+              <input class="hit-radio" type="radio" name="hits.value"
+              value="{{this}}" {{#ifEq ../data.system.hits.value
+              this}}checked{{/ifEq}} {{#ifLt ../data.system.hits.max
+              this}}disabled="true"{{/ifLt}} />
+              <span class="hit-num">{{this}}</span>
+            </label>
+            {{/times}}
           </div>
+        </div>  
+        <div class="initiative-row">
+          <div class="label initiative clickable" title="Roll Initiative">initiAtivE</div>
+          <div class="label attack clickable" title="Roll Attack">AttAck<span class="modifier" title="Roll Attack"> (+{{data.system.toHitModifier}})</span></div>            
+          <div class="label defense clickable" title="Roll Defense">dEfEnsE<span class="modifier" title="Roll Defensee"> (+{{data.system.defenseModifier}})</span></div>            
+          <div class="label luck clickable" title="Roll Luck">luck</div>
         </div>
       </div>
     </div>
+  </div>
 
-    <nav class="sheet-tabs tabs" data-group="primary">
-      <a class="item" data-tab="role">
-        <div class="tab-label">roLE</div>
-      </a>
-      <a class="item" data-tab="gear">
-        <div class="tab-label">GEAr</div>
-      </a>
-      <a class="item" data-tab="rules">
-        <div class="tab-label">rulEs</div>
-      </a>
-    </nav>
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="role">
+      <div class="tab-label">roLE</div>
+    </a>
+    <a class="item" data-tab="gear">
+      <div class="tab-label">GEAr</div>
+    </a>
+    <a class="item" data-tab="rules">
+      <div class="tab-label">rulEs</div>
+    </a>
+    <a class="item" data-tab="notes">
+      <div class="tab-label">notEs</div>
+    </a>
+  </nav>
 
-    <div class="sheet-body">
-      {{> systems/downwego/templates/actor/role-tab.html}} 
-      {{> systems/downwego/templates/actor/gear-tab.html}}
-      {{> systems/downwego/templates/actor/rules-tab.html}}
-    </div>
+  <div class="sheet-body">
+    {{> systems/downwego/templates/actor/role-tab.html}} 
+    {{> systems/downwego/templates/actor/gear-tab.html}}
+    {{> systems/downwego/templates/actor/rules-tab.html}}
+    {{> systems/downwego/templates/actor/notes-tab.html}}
   </div>
 </form>

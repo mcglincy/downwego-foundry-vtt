@@ -1,7 +1,7 @@
-# 0.1.1
+# 0.1.4
 
-- Fix build zip files.
+- Add notes tab with editor.
 
-# 0.1.0
+# 0.1.3
 
-- First release.
+- First successful build :P

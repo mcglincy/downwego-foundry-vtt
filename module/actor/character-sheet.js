@@ -5,7 +5,7 @@ export class DWGCharacterSheet extends ActorSheet {
         classes: ["downwego", "sheet", "actor", "character"],
         template: "systems/downwego/templates/actor/character-sheet.html",
         width: 820,
-        height: 930,
+        height: 920,
         tabs: [
           {
             navSelector: ".sheet-tabs",

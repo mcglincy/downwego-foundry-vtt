@@ -10,6 +10,10 @@
   font-size: 16px;
   padding: 20px;
 }
+.app.window-app.downwego.sheet .window-content form {
+  display: flex;
+  flex-direction: column;
+}
 .app.window-app.downwego.sheet .window-content img {
   border: none;
 }
@@ -103,8 +107,18 @@
   border-bottom: 3px solid white;
   text-shadow: none;
 }
-.app.window-app.downwego.sheet .window-content .tab {
+.app.window-app.downwego.sheet .window-content .sheet-tabs.tabs .tab {
   padding-top: 10px;
+}
+.app.window-app.downwego.sheet .window-content .sheet-body {
+  flex: 1;
+}
+.app.window-app.downwego.sheet .window-content .sheet-body .editor {
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 100%;
+  padding: 10px;
+  background-color: #F2F2F2;
 }
 
 .app.window-app.downwego.sheet.actor.character .window-content .sheet-header .right-of-portrait img.skull {
@@ -256,6 +270,10 @@
 }
 .app.window-app.downwego.sheet.actor.character .window-content .rules-tab .rule-text b {
   font-weight: bold;
+}
+.app.window-app.downwego.sheet.actor.character .window-content .notes-tab {
+  height: 100%;
+  padding-top: 20px;
 }
 
 .app.window-app.downwego.sheet.actor.monster .window-content .sheet-header .right-of-portrait .title-text img.monster {

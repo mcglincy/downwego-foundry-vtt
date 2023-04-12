@@ -1,65 +1,63 @@
 <form class="{{cssClass}}" autocomplete="off">
-  <div class="sheet-wrapper">
-    <div class="sheet-header">
-      <div class="portrait">
-        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+  <div class="sheet-header">
+    <div class="portrait">
+      <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    </div>
+    <div class="right-of-portrait">
+      <div class="title-text">
+        <img
+          class="monster"
+          alt="monster"
+          src="systems/downwego/assets/images/ui/monster.webp"
+        />
+        monstEr
+        <img
+          class="monster"
+          alt="monster"
+          src="systems/downwego/assets/images/ui/monster.webp"
+        />
       </div>
-      <div class="right-of-portrait">
-        <div class="title-text">
-          <img
-            class="monster"
-            alt="monster"
-            src="systems/downwego/assets/images/ui/monster.webp"
-          />
-          monstEr
-          <img
-            class="monster"
-            alt="monster"
-            src="systems/downwego/assets/images/ui/monster.webp"
-          />
-        </div>
-        <div class="my-name-is">
-          <div class="label">nAmE</div>
-          <input
-            type="text"
-            name="name"
-            value="{{actor.name}}"
-            spellcheck="false"
-          />
-        </div>
-        <div class="hits-row">
-          <div class="flex">
-            <div class="label">Dif</div>
-            <input type="text" class="dif" name="system.difficulty" value="{{data.system.difficulty}}" />
-  
-          </div>
-
-          <div class="flex">
-            <div class="label">DAm</div>
-            <input type="text" class="dam" name="system.damage" value="{{data.system.damage}}" /> 
-          </div>
-
-          <div class="flex">
-            <div class="label">hits</div>
-            <input type="text" class="hits-value" name="system.hits.value" value="{{data.system.hits.value}}" />
-            &nbsp;/&nbsp;
-            <input type="text" class="hits-max" name="system.hits.max" value="{{data.system.hits.max}}" />  
-          </div>
+      <div class="my-name-is">
+        <div class="label">nAmE</div>
+        <input
+          type="text"
+          name="name"
+          value="{{actor.name}}"
+          spellcheck="false"
+        />
+      </div>
+      <div class="hits-row">
+        <div class="flex">
+          <div class="label">Dif</div>
+          <input type="number" class="dif" name="system.difficulty" value="{{data.system.difficulty}}" />
 
         </div>
+
+        <div class="flex">
+          <div class="label">DAm</div>
+          <input type="number" class="dam" name="system.damage" value="{{data.system.damage}}" /> 
+        </div>
+
+        <div class="flex">
+          <div class="label">hits</div>
+          <input type="number" class="hits-value" name="system.hits.value" value="{{data.system.hits.value}}" />
+          &nbsp;/&nbsp;
+          <input type="number" class="hits-max" name="system.hits.max" value="{{data.system.hits.max}}" />  
+        </div>
+
       </div>
     </div>
+  </div>
 
-    <div class="sheet-body">    
-      <div class="field-row">
-        <div class="label">DEsc</div>
-        <textarea name="system.description" rows="5">{{data.system.description}}</textarea>
-      </div>
-      
-      <div class="field-row">
-        <div class="label">SpEc</div>
-        <textarea name="system.special" rows="5">{{data.system.special}}</textarea>
-      </div>
+  <div class="sheet-body">    
+    <div class="field-row">
+      <div class="label">DEsc</div>
+      <textarea name="system.description" rows="5">{{data.system.description}}</textarea>
+    </div>
+    
+    <div class="field-row">
+      <div class="label">SpEc</div>
+      <textarea name="system.special" rows="5">{{data.system.special}}</textarea>
     </div>
   </div>
 </form>
