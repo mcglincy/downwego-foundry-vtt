@@ -10,3 +10,4 @@ Down We Go is © [Plus One Exp](https://plusoneexp.com/) and [Apes of Wrath](htt
 
 * Code for Foundry is [MIT](https://en.wikipedia.org/wiki/MIT_License).
 * Down We Go core system is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+* Skull and demon icons by [Heritage Type](https://www.heritagetype.com/pages/free-vintage-illustrations) and used under [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/).
