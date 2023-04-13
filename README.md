@@ -1,6 +1,11 @@
 # Down We Go for Foundry VTT
 
-An unofficial, bare-bones system for playing [Down We Go](https://plusoneexp.com/collections/1-games/products/down-we-go-hardback) on [Foundry VTT](https://foundryvtt.com/).
+An unofficial, bare-bones system for playing [Down We Go](https://plusoneexp.com/collections/1-games/products/down-we-go-hardback) on [Foundry VTT](https://foundryvtt.com/). It is published under the [Together We Go](https://tonyplusone.itch.io/together-we-go) third-party license.
+
+```
+This work is based on Down We Go (downwego.games), and licensed for our use under CC BY 4.0 International.
+This product is not associated with Plus One Exp or Apes of Wrath.
+```
 
 Down We Go is © [Plus One Exp](https://plusoneexp.com/) and [Apes of Wrath](https://apesofwrath.itch.io/).
 
