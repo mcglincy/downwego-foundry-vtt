@@ -16,7 +16,7 @@ export class DWGActor extends Actor {
           disposition: 1,
           vision: true,
         };
-      } else if (data.type === CY.actorTypes.monster) {
+      } else if (data.type === actorTypes.monster) {
         defaults = {
           actorLink: false,
           disposition: -1,

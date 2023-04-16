@@ -1,3 +1,7 @@
+# 0.2.2
+
+- Fix typo syntax error when creating monsters.
+
 # 0.2.1
 
 - Set reasonable defaults for actor link & vision for actor creation.
