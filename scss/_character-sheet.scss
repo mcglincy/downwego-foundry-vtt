@@ -114,11 +114,8 @@
         .ability {
           display: flex;
           input[type="checkbox"] {
-            //display: none;
             appearance: none;
             border: 1px solid black;
-            // height: 10px;
-            // width: 10px;
             display: grid;
             place-content: center;
           }
@@ -131,6 +128,7 @@
             box-shadow: inset 1em 1em blue;
           } 
           input[type="checkbox"]:checked::before {
+            background-color: black;
             transform: scale(1);
           }
   

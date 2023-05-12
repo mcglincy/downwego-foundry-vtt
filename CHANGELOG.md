@@ -1,3 +1,11 @@
+# 0.2.4
+
+- Fix checkbox CSS to be properly visible on Foundry electron app/browser.
+
+# 0.2.3 
+
+- New release to pick up missed changes.
+
 # 0.2.2
 
 - Fix typo syntax error when creating monsters.

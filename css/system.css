@@ -230,6 +230,7 @@
   box-shadow: inset 1em 1em blue;
 }
 .app.window-app.downwego.sheet.actor.character .window-content .role-tab .role .abilities .ability input[type=checkbox]:checked::before {
+  background-color: black;
   transform: scale(1);
 }
 .app.window-app.downwego.sheet.actor.character .window-content .role-tab .role .abilities .ability .ability-name {
