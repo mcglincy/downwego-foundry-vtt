@@ -1,3 +1,8 @@
+# 1.0.0
+
+- v11 compatibility.
+- Fix abilities checkbox color.
+
 # 0.2.4
 
 - Fix checkbox CSS to be properly visible on Foundry electron app/browser.
