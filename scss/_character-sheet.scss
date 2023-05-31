@@ -125,7 +125,7 @@
             height: 0.8em;
             transform: scale(0);
             transition: 100ms transform ease-in-out;
-            box-shadow: inset 1em 1em blue;
+            box-shadow: inset 1em 1em black;
           } 
           input[type="checkbox"]:checked::before {
             background-color: black;

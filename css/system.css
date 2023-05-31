@@ -227,7 +227,7 @@
   height: 0.8em;
   transform: scale(0);
   transition: 100ms transform ease-in-out;
-  box-shadow: inset 1em 1em blue;
+  box-shadow: inset 1em 1em black;
 }
 .app.window-app.downwego.sheet.actor.character .window-content .role-tab .role .abilities .ability input[type=checkbox]:checked::before {
   background-color: black;
