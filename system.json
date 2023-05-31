@@ -28,7 +28,7 @@
   "secondaryTokenAttribute": null,
   "compatibility": {
     "minimum": 10,
-    "verified": 10
+    "verified": 11
   },  
   "url": "https://github.com/mcglincy/downwego-foundry-vtt",
   "manifest": "https://github.com/mcglincy/downwego-foundry-vtt/releases/latest/download/system.json",
