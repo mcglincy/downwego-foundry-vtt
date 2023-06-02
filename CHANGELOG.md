@@ -1,3 +1,7 @@
+# 1.0.1
+
+- Version bump for latest files.
+
 # 1.0.0
 
 - v11 compatibility.
