@@ -1,41 +1,44 @@
-export class DWGCharacterSheet extends ActorSheet {
-    /** @override */
-    static get defaultOptions() {
-      return mergeObject(super.defaultOptions, {
-        classes: ["downwego", "sheet", "actor", "character"],
-        template: "systems/downwego/templates/actor/character-sheet.html",
-        width: 820,
-        height: 920,
-        tabs: [
-          {
-            navSelector: ".sheet-tabs",
-            contentSelector: ".sheet-body",
-            initial: "role",
-          },
-        ],
-        dragDrop: [{ dragSelector: ".item-list .item", dropSelector: null }],
-      });
-    }
+export class DWGCharacterSheet extends foundry.appv1.sheets.ActorSheet {
+  /** @override */
+  static get defaultOptions() {
+    return foundry.utils.mergeObject(super.defaultOptions, {
+      classes: ["downwego", "sheet", "actor", "character"],
+      template: "systems/downwego/templates/actor/character-sheet.html",
+      width: 820,
+      height: 920,
+      tabs: [
+        {
+          navSelector: ".sheet-tabs",
+          contentSelector: ".sheet-body",
+          initial: "role",
+        },
+      ],
+      dragDrop: [{ dragSelector: ".item-list .item", dropSelector: null }],
+    });
+  }
 
+  /** @override */
+  getData() {
+    const superData = super.getData();
+    superData.data.system.hits.max = this.actor.maxHits;
+    superData.data.system.roles.bloodthirsty.level =
+      this.actor.bloodthirstyLevel;
+    superData.data.system.toHitModifier =
+      superData.data.system.roles.bloodthirsty.level;
+    superData.data.system.roles.holy.level = this.actor.holyLevel;
+    superData.data.system.roles.mystical.level = this.actor.mysticalLevel;
+    superData.data.system.roles.sneaky.level = this.actor.sneakyLevel;
+    superData.data.system.defenseModifier =
+      superData.data.system.roles.sneaky.level;
+    return superData;
+  }
 
-    /** @override */
-    getData() {
-      const superData = super.getData();
-      superData.data.system.hits.max = this.actor.maxHits;
-      superData.data.system.roles.bloodthirsty.level = this.actor.bloodthirstyLevel;
-      superData.data.system.toHitModifier = superData.data.system.roles.bloodthirsty.level;
-      superData.data.system.roles.holy.level = this.actor.holyLevel;
-      superData.data.system.roles.mystical.level = this.actor.mysticalLevel;
-      superData.data.system.roles.sneaky.level = this.actor.sneakyLevel;
-      superData.data.system.defenseModifier = superData.data.system.roles.sneaky.level;
-      return superData;
-    }
-
-
-      /** @override */
+  /** @override */
   activateListeners(html) {
     super.activateListeners(html);
-    html.find(".role-name.bloodthirsty").on("click", this._rollBloodthirsty.bind(this));
+    html
+      .find(".role-name.bloodthirsty")
+      .on("click", this._rollBloodthirsty.bind(this));
     html.find(".role-name.holy").on("click", this._rollHoly.bind(this));
     html.find(".role-name.mystical").on("click", this._rollMystical.bind(this));
     html.find(".role-name.sneaky").on("click", this._rollSneaky.bind(this));
@@ -67,14 +70,13 @@ export class DWGCharacterSheet extends ActorSheet {
 
   _rollDefense() {
     this.actor.rollDefense();
-  }  
+  }
 
   _rollInitiative() {
     this.actor.rollInitiative();
-  }  
+  }
 
   _rollLuck() {
     this.actor.rollLuck();
-  }  
-
+  }
 }

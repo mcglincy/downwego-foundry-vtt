@@ -1,3 +1,7 @@
+# 2.0.0
+
+- Foundry v13 support.
+
 # 1.0.1
 
 - Version bump for latest files.
@@ -11,7 +15,7 @@
 
 - Fix checkbox CSS to be properly visible on Foundry electron app/browser.
 
-# 0.2.3 
+# 0.2.3
 
 - New release to pick up missed changes.
 
