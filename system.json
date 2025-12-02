@@ -3,7 +3,6 @@
   "title": "Down We Go",
   "description": "Foundry VTT system for Down We Go.",
   "version": "2.0.0",
-  "templateVersion": 2,
   "authors": [
     {
       "name": "mcglintlock"
@@ -21,8 +20,10 @@
   "packs": [],
   "socket": true,
   "initiative": "1d6",
-  "gridDistance": 5,
-  "gridUnits": "ft",
+  "grid": {
+    "distance": 10,
+    "units": "ft"
+  },
   "primaryTokenAttribute": "hits",
   "secondaryTokenAttribute": null,
   "compatibility": {
