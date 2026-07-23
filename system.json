@@ -2,7 +2,7 @@
   "id": "downwego",
   "title": "Down We Go",
   "description": "Foundry VTT system for Down We Go.",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "authors": [
     {
       "name": "mcglintlock"
@@ -27,8 +27,9 @@
   "primaryTokenAttribute": "hits",
   "secondaryTokenAttribute": null,
   "compatibility": {
-    "minimum": 13,
-    "verified": 13
+    "maximum": 14,
+    "minimum": 14,
+    "verified": 14
   },
   "url": "https://github.com/mcglincy/downwego-foundry-vtt",
   "manifest": "https://github.com/mcglincy/downwego-foundry-vtt/releases/latest/download/system.json",

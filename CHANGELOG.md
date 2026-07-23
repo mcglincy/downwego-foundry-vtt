@@ -1,3 +1,7 @@
+# 3.0.0
+
+- Foundry v14 support.
+
 # 2.0.0
 
 - Foundry v13 support.
